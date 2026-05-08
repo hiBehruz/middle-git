@@ -1,11 +1,11 @@
-<script setup>
-defineProps({
-    name: String
-})
+<script setup lang="ts">
+defineProps<{
+  name: string
+}>()
 </script>
 
 <template>
-    <div class="flex items-center text-gray-700 hover:text-gray-900">
-        <span class="mr-2">📄</span> {{ name }}
-    </div>
+  <div class="flex items-center text-gray-700 hover:text-gray-900">
+    <span class="mr-2">📄</span> {{ name }}
+  </div>
 </template>
